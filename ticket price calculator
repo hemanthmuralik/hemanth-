@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+ int age,price;
+ price=100;
+ printf("enter the age");
+ scanf("%d",&age);
+
+if(age>=0 && age <5)
+{
+ printf("the ticket price is free");
+}#
+else if(age<=12)
+ {
+  printf("the ticket price is %f",price-(price*0.5));
+ }
+else if(age<=65){
+  printf("the ticket price is %f",price-(price*0.2));
+
+}
+else{
+  printf("no discount available");
+}
+
+}
