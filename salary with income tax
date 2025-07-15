@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int age,salary;
+    float tax =0.0,net_salary;
+    printf("enter the salary and age");
+    scanf("%d%d",&salary,&age);
+    if(age>50)
+    {
+        if(salary>50000)
+        {
+            salary=salary+5000;
+            printf("the new salary is %d",salary);
+        }
+        else{
+            salary=salary+3000;
+            printf("salary is %d",salary);
+        }
+
+    }
+    else{
+        salary=salary+1000;
+        printf("salary is %d",salary);
+    }
+if(salary>70000)
+{
+    tax=salary*0.2;
+}
+else if(salary>50000)
+{
+    tax=salary*0.1;
+}
+    else
+    {
+     tax=0.0;
+    }
+    net_salary=salary-tax;
+    printf("tax applied is%.2f\n",tax);
+    printf("the net salary is%.2f\n",net_salary);
+}
+
